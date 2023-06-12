@@ -134,3 +134,5 @@ DATABASES['default'].update(db_from_env)
 
 
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedStaticFilesStorage'
+import django_heroku
+django_heroku.settings(locals())
